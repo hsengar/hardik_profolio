@@ -1,0 +1,190 @@
+body {
+  margin: 0;
+}
+
+.right {
+  float: right;
+}
+
+.left {
+  float: left;
+}
+
+nav {
+  height: 64px;
+  background-color: #000000;
+}
+
+nav .nav-wrapper {
+  max-width: 1200px;
+  margin: auto;
+}
+
+nav .nav-wrapper ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: inline;
+}
+
+nav .nav-wrapper ul li {
+  color: #ffffff;
+  line-height: 64px;
+  font-family: "Open Sans", sans-serif;
+  padding: 0 10px 0 10px;
+  display: inline-block;
+}
+
+nav .nav-wrapper .download-btn {
+  background-color: #6fd1bd;
+  line-height: 64px;
+  border: none;
+  height: 64px;
+  padding: 0 20px;
+  color: #ffffff;
+}
+
+@media screen and (max-width: 500px) {
+  nav .nav-wrapper .download-btn {
+    /* display: none; */
+    display: none;
+  }
+}
+
+nav .nav-wrapper .download-btn:hover {
+  background-color: salmon;
+}
+
+.container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  max-width: 1200px;
+  margin: auto;
+  height: 300px;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+}
+
+.container .left {
+  width: 50%;
+  height: 100%;
+}
+
+.container .left .tagline {
+  display: inline-block;
+  margin: 20px 10px 0px 10px;
+  border-top: 10px black solid;
+  font-size: 24px;
+  letter-spacing: 5px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.container .left h1 {
+  display: block;
+  margin: 30px 0px 0px 10px;
+  font-family: Arial, Helvetica, sans-serif;
+  text-shadow: 3px 3px #6fd1bd;
+  color: black;
+  font-size: 72px;
+  line-break: auto;
+  line-height: 100%;
+  -webkit-transition: text-shadow 0.2s;
+  transition: text-shadow 0.2s;
+}
+
+.container .left h1:hover {
+  text-shadow: -3px -3px salmon;
+}
+
+.container .right {
+  font-family: "Open Sans", sans-serif;
+  width: 50%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: 150px;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+  line-break: auto;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+}
+
+.container .right ul {
+  list-style: none;
+  text-align: right;
+}
+
+.container .right a {
+  -webkit-text-decoration: underline #6fd1bd;
+          text-decoration: underline #6fd1bd;
+  color: black;
+  -webkit-transition: -webkit-text-decoration 0.2s;
+  transition: -webkit-text-decoration 0.2s;
+  transition: text-decoration 0.2s;
+  transition: text-decoration 0.2s, -webkit-text-decoration 0.2s;
+}
+
+.container .right a:hover {
+  -webkit-text-decoration: underline salmon;
+          text-decoration: underline salmon;
+}
+
+.body-container {
+  font-family: "Open Sans", sans-serif;
+  max-width: 1200px;
+  margin: auto;
+}
+
+.body-container .row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  margin: 10px 0px 0px 0px;
+  border-bottom: 1px lightgray solid;
+}
+
+.body-container .row .left {
+  padding: 20px;
+  width: 300px;
+}
+
+.body-container .row .right {
+  width: 100%;
+  padding: 20px;
+}
+
+.body-container .row .specialtag {
+  color: black;
+  background-color: #6fd1bd;
+  -webkit-transition: padding 0.2s;
+  transition: padding 0.2s;
+  border-radius: 5px;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+  padding: 0 5px 0 5px;
+}
+
+.body-container .row .specialtag:hover {
+  position: -webkit-sticky;
+  position: sticky;
+  padding: 10px;
+  background-color: #6fd1ed;
+}
+/*# sourceMappingURL=style.css.map */

@@ -1,0 +1,139 @@
+body {
+  margin: 0;
+}
+.right {
+  float: right;
+}
+.left{
+  float: left;
+}
+nav {
+  height: 64px;
+  background-color: #000000;
+
+  .nav-wrapper {
+    max-width: 1200px;
+    margin: auto;
+    ul {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+      display: inline;
+      li {
+        color: #ffffff;
+        line-height: 64px;
+        font-family: "Open Sans", sans-serif;
+        padding: 0 10px 0 10px;
+        display: inline-block;
+      }
+    }
+    .download-btn {
+      background-color: #6fd1bd;
+      line-height: 64px;
+      border: none;
+      height: 64px;
+      padding: 0 20px;
+      color: #ffffff;
+      @media screen and (max-width: 500px) {
+        /* display: none; */
+        display: none;
+      }
+      &:hover {
+        background-color: salmon;
+      }
+    }
+  }
+}
+.container{
+  display: flex;
+  max-width: 1200px;
+  margin: auto;
+  height: 300px;
+  justify-content: space-between;
+  align-items: flex-end;
+  .left{
+    width:50%;
+    height: 100%;
+    .tagline{
+      display: inline-block;
+      margin: 20px 10px 0px 10px;
+      border-top: 10px black solid;
+      font-size: 24px;
+      letter-spacing: 5px;
+      font-family: Arial, Helvetica, sans-serif;
+    }
+    h1{
+      display:block;
+      margin: 30px 0px 0px 10px;
+      font-family: Arial, Helvetica, sans-serif;
+      text-shadow: 3px 3px #6fd1bd;
+      color: black;
+      font-size: 72px;
+      line-break: auto;
+      line-height: 100%;
+      transition: text-shadow 0.2s;
+      &:hover{
+        text-shadow: -3px -3px salmon;
+      }
+    }
+  }
+  .right{
+    font-family: "Open Sans", sans-serif;
+    width:50%;
+    display: flex;
+    height:150px;
+    align-items: flex-end;
+    line-break: auto;
+    justify-content: flex-end;
+    ul{
+      list-style: none;
+      text-align: right;
+    }
+    a{
+      text-decoration: underline #6fd1bd;
+      color: black;
+      transition: text-decoration 0.2s;
+      &:hover{
+        text-decoration: underline salmon;
+      }
+    }
+  }
+}
+.body-container{
+  font-family: "Open Sans", sans-serif;
+  max-width: 1200px;
+  margin: auto;
+  .row{
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin: 10px 0px 0px 0px;
+    border-bottom: 1px lightgray solid;
+    .left{
+      padding: 20px;
+      width: 300px;
+    }
+    .right{
+      width: 100%;
+      padding: 20px;
+    }
+    .specialtag{
+      color: black;
+      background-color:#6fd1bd;
+      transition: padding 0.2s;
+      border-radius: 5px;
+      top: 0;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      margin: auto;
+      padding: 0 5px 0 5px;
+      &:hover {
+        position: sticky;
+        padding:10px;
+        background-color:#6fd1ed;
+      } 
+    }
+  }
+  
+}
