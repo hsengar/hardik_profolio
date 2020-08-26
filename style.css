@@ -42,6 +42,8 @@ nav .nav-wrapper ul li a {
   height: 32px;
   padding: 0 20px;
   color: #ffffff;
+  text-decoration: none;
+  border-radius: 10px 25px;
 }
 
 nav .nav-wrapper ul li a:hover {
