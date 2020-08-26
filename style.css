@@ -35,6 +35,19 @@ nav .nav-wrapper ul li {
   display: inline-block;
 }
 
+nav .nav-wrapper ul li a {
+  background-color: #6fd1bd;
+  line-height: 32px;
+  border: none;
+  height: 32px;
+  padding: 0 20px;
+  color: #ffffff;
+}
+
+nav .nav-wrapper ul li a:hover {
+  background-color: salmon;
+}
+
 nav .nav-wrapper .download-btn {
   background-color: #6fd1bd;
   line-height: 64px;
